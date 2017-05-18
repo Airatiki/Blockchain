@@ -1,0 +1,121 @@
+<head>
+  <title>WeddingChain</title>
+  <style>
+table, th, td {
+    border: 1px solid black;
+    
+}
+td { width: 33%; 
+    text-align: center;}
+th{
+  text-align: center;
+}
+table#table {
+	table-layout: fixed;
+    background-color:#5F9EA0;
+}
+</style>
+
+</head>
+
+<!-- <body>
+  <h1>Welcome to Meteor!</h1>
+  {{> mainForm}}
+</body> -->
+
+<template name="assignInformation">
+    <!-- <h2>Contract's address:</h2>
+    <input type="text" id="cont_address" size=”15” maxlength=”20” value="" style="width: 15%"><br>
+    <input type="button" class="button orange"  id = "show_inf" name="info" value="Show information" style="width: 15%"><br> -->
+    <div id = "abilities">
+    Address:<input type="text" id="money" value="" style="width: 19%"> Amount:<input type="number" id="amount" value="" style="width: 9%">
+    <input type="radio" name="gender" id="Male" value="1" checked>Male
+    <input type="radio" name="gender" id="Female" value="2">Female<br><br>
+
+    <input type="button" class="button orange" id = "send_money" name="sendMoney" value="Buy" style="width: 19%">
+    <input type="button" class="button orange" id = "donate_money" name="donateMoney" value="Donate Money" style="width: 19%">
+    <input type="button" class="button orange" id = "divorce" name="test" value="Divorce" style="width: 19%" margin = "10px">
+
+   
+    
+  </div>
+
+    <table id = "table">
+  <tr>
+    <th>Personal Information</th>
+    <th>Wife</th> 
+    <th>Husband</th>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td>{{getWife_name}}</td>
+    <td>{{getHusband_name}}</td>
+  </tr>
+  <tr>
+    <td>Surname</td>
+    <td>{{getWife_surname}}</td>
+    <td>{{getHusband_surname}}</td>
+  </tr>
+  <tr>
+    <td>Country</td>
+    <td>{{getWife_country}}</td>
+    <td>{{getHusband_country}}</td>
+  </tr>
+  <tr>
+    <td>City</td>
+    <td>{{getWife_city}}</td>
+    <td>{{getHusband_city}}</td>
+  </tr>
+  <tr>
+    <td>ID Number</td>
+    <td>{{getWife_id}}</td>
+    <td>{{getHusband_id}}</td>
+  </tr>
+</table>
+    
+</template>
+<template name="Home">
+	<a href = "/registration"><input type="button" class="button6"  id = "reg_but" name="one" value="Registration" style="width: 18%"></a>
+
+  <a href = "/assign"><input type="button" class="button6"  id = "asd" name="asd" value="Contract's information" style="width: 18%"></a>
+
+	
+</template>
+
+<template name = "assign">
+  <div id = "address_enter">
+    Contract's address:
+    <input type="text" id="enter_address" size=”15” maxlength=”20” value="" style="width: 68%"><br>
+    <a href = "/assign/information"><input type="button" class="button orange"  id = "show_info" name="asd" value="Show information" style="width: 45%"></a>
+  </div>
+</template>
+
+<template name="registration">
+<link rel="stylesheet" type="text/css" href="main.css">
+<div id="center">
+Name:<br>
+<input type="text" id="name" size=”15” maxlength=”20” value="" style="width: 99%"><br>
+Surname:<br>
+<input type="text" id="surname" size=”20” maxlength=”25” value="" style="width: 99%"><br>
+Country:<br>
+<input type="text" id="country" size=”20” maxlength=”25” value="" style="width: 99%"><br>
+City:<br>
+<input type="text" id="city" size=”15” maxlength=”20” value="" style="width: 99%"><br>
+ID Number:<br>
+<input type="text" id="idNumber" size=”15” maxlength=”20” value="" style="width: 99%"><br>
+Gender:<br> 
+<input type="radio" name="gender" id="male" value="1" checked>Male
+<input type="radio" name="gender" id="female" value="2">Female<br>
+Contract's address:<br>
+<input type="text" id="code" size=”15” maxlength=”20” value="" style="width: 99%"><br>
+
+<input type="button" class="button orange"  id = "create_cont" name="generateCode" value="Generate Address" style="width: 49%">
+<input type="button" class="button orange" id = "send_cont" name="sendContract" value="Send" style="width: 50%"><br>
+
+
+{{#if TemplateVar.get "address"}}
+  <p>Contract's address : {{TemplateVar.get "address"}}</p>
+{{/if}}
+
+</div>
+</template>

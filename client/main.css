@@ -1,0 +1,156 @@
+body {
+    background: url('wedding1.jpg') no-repeat fixed;
+    background-size: cover;
+}
+
+#reg_but{
+    top:290px;
+    left: 380px
+   
+}
+
+#asd{
+      top: 290px;
+
+    left: 437px;
+}
+
+
+#abilities{
+    color: white; /* цвет ИМЕННО ШРИФТА! */
+    font-family: "cursive";
+    font-size: 17px;
+    top: 90%; /* Отступ в процентах от верхнего края окна */
+    left: 39%; /* Отступ в процентах от левого края окна */
+    width: 900px;
+    position: absolute; /* Абсолютное позиционирование блока */
+    margin-top: -100px; /* Отрицательный отступ от верхнего края страницы, должен равняться половине высоты блока со знаком минус */
+    margin-left: -100px; 
+}
+
+#table{
+
+	color: white; /* цвет ИМЕННО ШРИФТА! */
+    font-family: "cursive"; /* Futura    Шрифт текста в блоке */
+    font-size: 17px;
+    top: 78%; /* Отступ в процентах от верхнего края окна */
+    left: 40%; /* Отступ в процентах от левого края окна */
+    width: 750px;
+    position: absolute; /* Абсолютное позиционирование блока */
+    margin-top: -225px; /* Отрицательный отступ от верхнего края страницы, должен равняться половине высоты блока со знаком минус */
+    margin-left: -225px; /* Отрицательный отступ от левого края страницы, должен равняться половине высоты блока со знаком*/
+}
+
+#initial_page{
+    font-size: 17px;
+    top: 78%; /* Отступ в процентах от верхнего края окна */
+    left: 50%; /* Отступ в процентах от левого края окна */
+    width: 425px; /* Ширина блока */
+    height: 150px; /* Высота блока */
+    position: absolute; /* Абсолютное позиционирование блока */
+    margin-top: -225px; /* Отрицательный отступ от верхнего края страницы, должен равняться половине высоты блока со знаком минус */
+    margin-left: -225px; 
+
+}
+#address_enter{
+	color: white; /* цвет ИМЕННО ШРИФТА! */
+    font-family: "cursive"; /* Futura    Шрифт текста в блоке */
+	font-size: 17px;
+    top: 78%; /* Отступ в процентах от верхнего края окна */
+    left: 48%; /* Отступ в процентах от левого края окна */
+    width: 500px; /* Ширина блока */
+    height: 150px; /* Высота блока */
+    position: absolute; /* Абсолютное позиционирование блока */
+    margin-top: -225px; /* Отрицательный отступ от верхнего края страницы, должен равняться половине высоты блока со знаком минус */
+    margin-left: -225px; 
+
+}
+#center { /* характеристики формы с полями */
+    color: white; /* цвет ИМЕННО ШРИФТА! */
+    font-family: "cursive"; /* Futura    Шрифт текста в блоке */
+    font-size: 17px;
+    top: 78%; /* Отступ в процентах от верхнего края окна */
+    left: 50%; /* Отступ в процентах от левого края окна */
+    width: 425px; /* Ширина блока */
+    height: 150px; /* Высота блока */
+    position: absolute; /* Абсолютное позиционирование блока */
+    margin-top: -225px; /* Отрицательный отступ от верхнего края страницы, должен равняться половине высоты блока со знаком минус */
+    margin-left: -225px; /* Отрицательный отступ от левого края страницы, должен равняться половине высоты блока со знаком минус */
+}
+.button {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	/*text-decoration: none;*/
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+}
+
+.orange {
+	color: #dfeef7; /*#fef4e9*/
+	border: solid 1px #0076a3; /*#da7c0c;*/
+	background: #0095cd;  /*#f78d1d*/
+	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5)); /*#faa51a  #f47a20*/
+	/*background: -moz-linear-gradient(top,  #faa51a,  #f47a20);*/
+	/*filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');*/
+}
+.orange:hover {
+	background: #f47c20;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+	background: -moz-linear-gradient(top,  #f88e11,  #f06015);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+}
+.orange:active {
+	color: #fcd3a5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
+	background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
+}
+
+
+.button6 {
+
+  position: relative;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #cc5500;
+  user-select: none;
+  padding: .8em 2em;
+  outline: none;
+  /*border-radius: 1px;*/
+  background: linear-gradient(to left, rgba(0,0,0,.3), rgba(0,0,0,.0) 50%, rgba(0,0,0,.3)), linear-gradient(#00FA9A, #00FA9A, #00FA9A); /*#d77d31, mid =#fe8417*/
+  background-size: 100% 100%, auto;
+  background-position: 50% 50%;
+  /*box-shadow: inset #00FA9A 0 -1px 1px, inset 0 1px 1px #ffbf00, #00FA9A 0 0 0 1px, #000 0 10px 15px -10px;*/
+  /*transition: 0.2s;*/
+}
+.button6:hover {
+  background-size: 140% 100%, auto;
+
+}
+.button6:active {
+  /*top: 1px;
+  color: #00FA9A;
+  box-shadow: inset #00FA9A 0 -1px 1px, inset 0 1px 1px #00FA9A, #00FA9A 0 0 0 1px, 0 10px 10px -9px #00FA9A;*/
+
+  color: #fcd3a5;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
+    background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
+}
